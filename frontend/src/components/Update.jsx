@@ -17,7 +17,7 @@ const Update = () => {
     e.preventDefault();
     const updatedUser = { name, email, age };
     console.log(updatedUser);
-    const response = await fetch(`http://localhost:5000/${id}`, {
+    const response = await fetch(`https://crud-vic0.onrender.com/${id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
@@ -38,7 +38,7 @@ const Update = () => {
 
   //receving single user data
   const getSingleData = async () => {
-    const response = await fetch(`http://localhost:5000/${id}`);
+    const response = await fetch(`https://crud-vic0.onrender.com/${id}`);
     const result = await response.json();
 
     if (response.ok) {

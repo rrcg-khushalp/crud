@@ -7,7 +7,7 @@ const Read = () => {
   const navigate = useNavigate();
 
   async function handleDelete(id) {
-    const response = await fetch(`http://localhost:5000/${id}`, {
+    const response = await fetch(`https://crud-vic0.onrender.com/${id}`, {
       method: "DELETE",
     });
 
@@ -26,7 +26,7 @@ const Read = () => {
   }
 
   async function getData() {
-    const response = await fetch("http://localhost:5000");
+    const response = await fetch("https://crud-vic0.onrender.com");
     const result = await response.json();
     console.log("result..", result);
     if (!response.ok) {

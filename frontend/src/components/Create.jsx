@@ -14,7 +14,7 @@ const Create = () => {
     var addUser = { name, email, age };
     console.log(addUser);
 
-    const response = await fetch("http://localhost:5000/", {
+    const response = await fetch("https://crud-vic0.onrender.com/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
