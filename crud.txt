@@ -1,0 +1,9 @@
+Backend : 
+
+- npm init
+- npm run dev
+
+FrontEnd :
+- npx create-react-app <app_name> .
+- npm start
+- npm i react-router-dom
